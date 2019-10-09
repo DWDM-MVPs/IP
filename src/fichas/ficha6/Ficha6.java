@@ -36,7 +36,7 @@ public class Ficha6
 
     public static boolean IsPrimeNumber(int _Number)
     {
-	for (var _Loop = 2; _Loop < _Number; _Loop++)
+	for (int _Loop = 2; _Loop < _Number; _Loop++)
 	{
 	    if (_Number % _Loop == 0)
 	    {

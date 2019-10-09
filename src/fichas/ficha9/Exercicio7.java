@@ -8,18 +8,18 @@ public class Exercicio7
 {
     public static void main(String[] args)
     {
-	ArrayList<String> list = new ArrayList<>();
-	Map<Integer, String> map = new HashMap<>();
+		ArrayList<String> list = new ArrayList<>();
+		Map<Integer, String> map = new HashMap<>();
 
-	list.add("Valor1");
-	list.add("Valor2");
-	list.add("Valor3");
-	list.add("Valor4");
-	list.add("Valor5");
+		list.add("Valor1");
+		list.add("Valor2");
+		list.add("Valor3");
+		list.add("Valor4");
+		list.add("Valor5");
 
-	for (int i = 0; i < list.size(); i++)
-	{
-	    map.put(i, list.get(i));
-	}
+		for (int i = 0; i < list.size(); i++)
+		{
+			map.put(i, list.get(i));
+		}
     }
 }
