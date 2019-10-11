@@ -8,7 +8,6 @@ public class Exercicio1
     public static void main(String[] args)
     {
 	List<String> list = new ArrayList<>();
-
 	for (int i = 1; i <= 10; i++) list.add("Pessoa " + i);
 
 	Object resultado = Pesquisa(new ArrayList<Object>(list), "Pessoa 10");
