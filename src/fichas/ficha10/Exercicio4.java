@@ -1,7 +1,6 @@
 package fichas.ficha10;
 
 import ip.teclado.Teclado;
-import jdk.nashorn.internal.objects.annotations.Function;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -69,7 +68,6 @@ public class Exercicio4
             }
 
             System.out.println("Contactos que pertencem ao nome:");
-            System.out.println("index: " + numeros.size());
             for (int i = 0; i < numeros.size(); i++)
             {
                 System.out.println("[" + i + "] " + numeros.get(i));
