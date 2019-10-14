@@ -1,7 +1,6 @@
 package fichas.ficha10;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class Exercicio2
 {
