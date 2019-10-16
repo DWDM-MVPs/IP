@@ -9,8 +9,11 @@ public class Exercicio4
     {
         ArrayList<Integer> listnums = new ArrayList<>();
         for (int i = 0; i < 10; i++) listnums.add(new Random().nextInt(1000));
+	for (int i = 0; i < 10; i++) System.out.println(listnums.get(i));
 
-        DescrobrirMaior(listnums, 0);
+	System.out.println("\n");
+
+	DescrobrirMaior(listnums, 0);
         System.out.println(maior);
     }
 
