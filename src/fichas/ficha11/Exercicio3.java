@@ -7,7 +7,7 @@ public class Exercicio3
         System.out.println("Número de algarismos: " + NumAlgarismos(670));
     }
 
-    static int algs, pos;
+    static int algs;
     private static int NumAlgarismos(int num)
     {
         algs += 1;
