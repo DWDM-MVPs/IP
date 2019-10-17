@@ -1,5 +1,6 @@
 package fichas.ficha11;
 
+import java.security.IdentityScope;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -13,15 +14,18 @@ public class Exercicio4
 
 	System.out.println("\n");
 
-	DescrobrirMaior(listnums, 0);
-        System.out.println(maior);
+        System.out.println(DescrobrirMaior(listnums));
     }
 
-    static int maior;
-    private static void DescrobrirMaior(ArrayList<Integer> list, int index)
+    private static int DescrobrirMaior(ArrayList<Integer> list)
     {
-        if (list.get(index) > maior) maior = list.get(index);
-	index += 1;
-        if (index < list.size()) DescrobrirMaior(list, index);
+        int maior = list.get(0);
+        list.remove(0);
+        if (list.size() > 0)
+	{
+	    int met = DescrobrirMaior(list);
+	    if (met > maior) maior = met;
+	}
+        return maior;
     }
 }
