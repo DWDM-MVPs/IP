@@ -11,7 +11,8 @@ public class Exercicio3
     private static int NumAlgarismos(int num)
     {
         algs += 1;
-        if (algs < String.valueOf(num).length()) NumAlgarismos(num);
+        num = num / 10;
+        if (num > 0) NumAlgarismos(num);
         return algs;
     }
 }
