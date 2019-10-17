@@ -4,14 +4,14 @@ public class Exercicio2
 {
     public static void main(String[] args)
     {
-	SomaTudoAte(50, 0, 0);
+	SomaTudoAte(50);
     }
 
-    private static void SomaTudoAte(int max, int valor, int soma)
+    private static int SomaTudoAte(int max)
     {
-        valor++;
-        soma += valor;
+        int soma = max;
+        if ((max = max - 1) >= 0) soma = soma + SomaTudoAte(max);
         System.out.println(soma);
-        if (valor <= max) SomaTudoAte(max, valor, soma);
+        return soma;
     }
 }
