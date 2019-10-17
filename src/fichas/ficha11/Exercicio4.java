@@ -8,12 +8,13 @@ public class Exercicio4
     public static void main(String[] args)
     {
         ArrayList<Integer> listnums = new ArrayList<>();
+        System.out.println("Lista de números:");
         for (int i = 0; i < 10; i++) listnums.add(new Random().nextInt(1000));
 	for (int i = 0; i < 10; i++) System.out.println(listnums.get(i));
 
-	System.out.println("\n");
+	System.out.printf("\n");
 
-        System.out.println(DescrobrirMaior(listnums));
+        System.out.println("Maior: " + DescrobrirMaior(listnums));
     }
 
     private static int DescrobrirMaior(ArrayList<Integer> list)
