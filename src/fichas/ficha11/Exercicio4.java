@@ -1,6 +1,5 @@
 package fichas.ficha11;
 
-import java.security.IdentityScope;
 import java.util.ArrayList;
 import java.util.Random;
 
