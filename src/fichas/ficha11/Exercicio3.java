@@ -11,8 +11,7 @@ public class Exercicio3
     private static int NumAlgarismos(int num)
     {
         algs += 1;
-        num = num / 10;
-        if (num > 0) NumAlgarismos(num);
+        if ((num = num / 10) > 0) NumAlgarismos(num);
         return algs;
     }
 }
