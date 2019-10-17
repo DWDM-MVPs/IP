@@ -4,14 +4,14 @@ public class Exercicio5
 {
     public static void main(String[] args)
     {
-	System.out.println(CalculoPotencia(8, 3, 0));
+	System.out.println(CalculoPotencia(8, 3));
     }
 
-    private static int CalculoPotencia(int num, int potencia, int resultado)
+    private static int CalculoPotencia(int num, int potencia)
     {
-        if (resultado == 0) resultado = num;
-        potencia--;
-        if (potencia >= 1) resultado = CalculoPotencia(num, potencia, resultado) * num;
+        int resultado = num * num;
+        potencia = potencia - 1;
+        if (potencia > 1) resultado = CalculoPotencia(num, potencia) * num;
         return resultado;
     }
 }
