@@ -4,13 +4,13 @@ public class Exercicio1
 {
     public static void main(String[] args)
     {
-	EscreveNum(50, 0);
+	EscreveNum(50);
     }
 
-    private static void EscreveNum(int max, int valor)
+    private static void EscreveNum(int max)
     {
-        System.out.println(valor);
-        valor++;
-        if (valor <= max) EscreveNum(max, valor);
+        max = max - 1;
+        if (max >= 0) EscreveNum(max);
+        System.out.println(max + 1);
     }
 }
