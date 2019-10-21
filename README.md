@@ -1,5 +1,5 @@
-# DWDM
-Projecto Java da disciplina de Introdução à Programação
+# DWDM IP
+Projecto Java da disciplina de Introdução à Programação (IP)
 
 
 ## Random
